@@ -1,4 +1,4 @@
-# nbdev template
+# alphalib
 
-Use this template to more easily create your nbdev project.
+A library for your daily data engineering and data science routines.
 
