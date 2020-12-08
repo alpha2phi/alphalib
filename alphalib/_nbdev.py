@@ -4,11 +4,14 @@ __all__ = ["index", "modules", "custom_doc_links", "git_url"]
 
 index = {"auto_str": "01_data.loader.ipynb",
          "ObjectFactory": "01_data.loader.ipynb",
-         "DbProvider": "01_data.loader.ipynb",
+         "DbSinkProvider": "01_data.loader.ipynb",
+         "FileSourceProvider": "01_data.loader.ipynb",
          "PgSqlDbBuilder": "01_data.loader.ipynb",
          "PgSqlDb": "01_data.loader.ipynb",
-         "ingest": "01_data.loader.ipynb",
-         "db_provider": "01_data.loader.ipynb"}
+         "ExcelSource": "01_data.loader.ipynb",
+         "supported_databases": "01_data.loader.ipynb",
+         "supported_files_types": "01_data.loader.ipynb",
+         "ingest": "01_data.loader.ipynb"}
 
 modules = ["data/loader.py"]
 

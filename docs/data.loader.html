@@ -6,8 +6,8 @@ title: Data Loader
 keywords: fastai
 sidebar: home_sidebar
 
-summary: "Generic data ingestion routines to ingest data from files to databases and vice versa."
-description: "Generic data ingestion routines to ingest data from files to databases and vice versa."
+summary: "Generic data ingestion routines to ingest data from files to databases."
+description: "Generic data ingestion routines to ingest data from files to databases."
 nb_path: "01_data.loader.ipynb"
 ---
 <!--
@@ -32,34 +32,10 @@ nb_path: "01_data.loader.ipynb"
     {% raw %}
     
 <div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="o">%</span><span class="k">load_ext</span> autoreload
-<span class="o">%</span><span class="k">autoreload</span> 2
-</pre></div>
-
-    </div>
-</div>
-</div>
 
 </div>
     {% endraw %}
 
-    {% raw %}
-    
-<div class="cell border-box-sizing code_cell rendered">
-
-</div>
-    {% endraw %}
-
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Base-Classes-and-Decorators">Base Classes and Decorators<a class="anchor-link" href="#Base-Classes-and-Decorators"> </a></h2>
-</div>
-</div>
-</div>
     {% raw %}
     
 <div class="cell border-box-sizing code_cell rendered">
@@ -71,7 +47,7 @@ nb_path: "01_data.loader.ipynb"
 
 
 <div class="output_markdown rendered_html output_subarea ">
-<h4 id="auto_str" class="doc_header"><code>auto_str</code><a href="https://github.com/alpah2phi/alphalib/tree/master/alphalib/data/loader.py#L17" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>auto_str</code>()</p>
+<h4 id="auto_str" class="doc_header"><code>auto_str</code><a href="https://github.com/alpah2phi/alphalib/tree/master/alphalib/data/loader.py#L18" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>auto_str</code>()</p>
 </blockquote>
 <p>Auto generate string representation of the object.
 Args:
@@ -91,6 +67,19 @@ Args:
     
 <div class="cell border-box-sizing code_cell rendered">
 
+</div>
+    {% endraw %}
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Core-Classes">Core Classes<a class="anchor-link" href="#Core-Classes"> </a></h2>
+</div>
+</div>
+</div>
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+
 <div class="output_wrapper">
 <div class="output">
 
@@ -98,7 +87,7 @@ Args:
 
 
 <div class="output_markdown rendered_html output_subarea ">
-<h2 id="ObjectFactory" class="doc_header"><code>class</code> <code>ObjectFactory</code><a href="https://github.com/alpah2phi/alphalib/tree/master/alphalib/data/loader.py#L33" class="source_link" style="float:right">[source]</a></h2><blockquote><p><code>ObjectFactory</code>()</p>
+<h2 id="ObjectFactory" class="doc_header"><code>class</code> <code>ObjectFactory</code><a href="https://github.com/alpah2phi/alphalib/tree/master/alphalib/data/loader.py#L34" class="source_link" style="float:right">[source]</a></h2><blockquote><p><code>ObjectFactory</code>()</p>
 </blockquote>
 <p>Generic object factory.</p>
 
@@ -116,6 +105,13 @@ Args:
     
 <div class="cell border-box-sizing code_cell rendered">
 
+</div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+
 <div class="output_wrapper">
 <div class="output">
 
@@ -123,7 +119,7 @@ Args:
 
 
 <div class="output_markdown rendered_html output_subarea ">
-<h2 id="DbProvider" class="doc_header"><code>class</code> <code>DbProvider</code><a href="https://github.com/alpah2phi/alphalib/tree/master/alphalib/data/loader.py#L48" class="source_link" style="float:right">[source]</a></h2><blockquote><p><code>DbProvider</code>() :: <a href="/alphalib/data.loader.html#ObjectFactory"><code>ObjectFactory</code></a></p>
+<h2 id="DbSinkProvider" class="doc_header"><code>class</code> <code>DbSinkProvider</code><a href="https://github.com/alpah2phi/alphalib/tree/master/alphalib/data/loader.py#L51" class="source_link" style="float:right">[source]</a></h2><blockquote><p><code>DbSinkProvider</code>() :: <a href="/alphalib/data.loader.html#ObjectFactory"><code>ObjectFactory</code></a></p>
 </blockquote>
 <p>Database factory.</p>
 
@@ -144,9 +140,47 @@ Args:
 </div>
     {% endraw %}
 
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+<div class="output_markdown rendered_html output_subarea ">
+<h2 id="FileSourceProvider" class="doc_header"><code>class</code> <code>FileSourceProvider</code><a href="https://github.com/alpah2phi/alphalib/tree/master/alphalib/data/loader.py#L60" class="source_link" style="float:right">[source]</a></h2><blockquote><p><code>FileSourceProvider</code>() :: <a href="/alphalib/data.loader.html#ObjectFactory"><code>ObjectFactory</code></a></p>
+</blockquote>
+<p>File factory.</p>
+
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+
+</div>
+    {% endraw %}
+
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="PostgreSQL-Provider">PostgreSQL Provider<a class="anchor-link" href="#PostgreSQL-Provider"> </a></h2>
+<h2 id="Target-Databases">Target Databases<a class="anchor-link" href="#Target-Databases"> </a></h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="PostgreSQL">PostgreSQL<a class="anchor-link" href="#PostgreSQL"> </a></h3>
 </div>
 </div>
 </div>
@@ -161,7 +195,7 @@ Args:
 
 
 <div class="output_markdown rendered_html output_subarea ">
-<h2 id="PgSqlDbBuilder" class="doc_header"><code>class</code> <code>PgSqlDbBuilder</code><a href="https://github.com/alpah2phi/alphalib/tree/master/alphalib/data/loader.py#L56" class="source_link" style="float:right">[source]</a></h2><blockquote><p><code>PgSqlDbBuilder</code>()</p>
+<h2 id="PgSqlDbBuilder" class="doc_header"><code>class</code> <code>PgSqlDbBuilder</code><a href="https://github.com/alpah2phi/alphalib/tree/master/alphalib/data/loader.py#L68" class="source_link" style="float:right">[source]</a></h2><blockquote><p><code>PgSqlDbBuilder</code>()</p>
 </blockquote>
 <p>PostgreSQL database builder.</p>
 
@@ -186,9 +220,9 @@ Args:
 
 
 <div class="output_markdown rendered_html output_subarea ">
-<h2 id="PgSqlDb" class="doc_header"><code>class</code> <code>PgSqlDb</code><a href="https://github.com/alpah2phi/alphalib/tree/master/alphalib/data/loader.py#L78" class="source_link" style="float:right">[source]</a></h2><blockquote><p><code>PgSqlDb</code>(<strong><code>host</code></strong>, <strong><code>port</code></strong>, <strong><code>db</code></strong>, <strong><code>user</code></strong>, <strong><code>password</code></strong>)</p>
+<h2 id="PgSqlDb" class="doc_header"><code>class</code> <code>PgSqlDb</code><a href="https://github.com/alpah2phi/alphalib/tree/master/alphalib/data/loader.py#L90" class="source_link" style="float:right">[source]</a></h2><blockquote><p><code>PgSqlDb</code>(<strong><code>host</code></strong>, <strong><code>port</code></strong>, <strong><code>db</code></strong>, <strong><code>user</code></strong>, <strong><code>password</code></strong>)</p>
 </blockquote>
-<p>PostgreSQL database service.</p>
+<p>PostgreSQL database.</p>
 
 </div>
 
@@ -209,10 +243,61 @@ Args:
 
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Ingestion-Routines">Ingestion Routines<a class="anchor-link" href="#Ingestion-Routines"> </a></h2>
+<h2 id="Supported-Sources">Supported Sources<a class="anchor-link" href="#Supported-Sources"> </a></h2>
 </div>
 </div>
 </div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Excel">Excel<a class="anchor-link" href="#Excel"> </a></h3>
+</div>
+</div>
+</div>
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+<div class="output_markdown rendered_html output_subarea ">
+<h2 id="ExcelSource" class="doc_header"><code>class</code> <code>ExcelSource</code><a href="https://github.com/alpah2phi/alphalib/tree/master/alphalib/data/loader.py#L111" class="source_link" style="float:right">[source]</a></h2><blockquote><p><code>ExcelSource</code>(<strong><code>filepath</code></strong>)</p>
+</blockquote>
+<p>Excel file support.</p>
+
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+
+</div>
+    {% endraw %}
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Ingestion">Ingestion<a class="anchor-link" href="#Ingestion"> </a></h2>
+</div>
+</div>
+</div>
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+
+</div>
+    {% endraw %}
+
     {% raw %}
     
 <div class="cell border-box-sizing code_cell rendered">
@@ -231,7 +316,7 @@ Args:
 
 
 <div class="output_markdown rendered_html output_subarea ">
-<h4 id="ingest" class="doc_header"><code>ingest</code><a href="https://github.com/alpah2phi/alphalib/tree/master/alphalib/data/loader.py#L103" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>ingest</code>(<strong><code>excel_file</code></strong>, <strong><code>db_name</code></strong>, <strong><code>table_name</code></strong>, <strong><code>db_type</code></strong>=<em><code>'pgsql'</code></em>, <strong><code>schema</code></strong>=<em><code>None</code></em>)</p>
+<h4 id="ingest" class="doc_header"><code>ingest</code><a href="https://github.com/alpah2phi/alphalib/tree/master/alphalib/data/loader.py#L133" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>ingest</code>(<strong><code>excel_file</code></strong>, <strong><code>db_name</code></strong>, <strong><code>table_name</code></strong>, <strong><code>db_type</code></strong>=<em><code>'pgsql'</code></em>, <strong><code>schema</code></strong>=<em><code>None</code></em>)</p>
 </blockquote>
 <p>Ingest the file into the database table.</p>
 
@@ -248,43 +333,44 @@ Args:
     {% raw %}
     
 <div class="cell border-box-sizing code_cell rendered">
+
+</div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">pgsql_db</span> <span class="o">=</span> <span class="n">db_provider</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;pgsql&quot;</span><span class="p">)</span>
-<span class="n">pgsql_db</span><span class="o">.</span><span class="n">get_conn_str</span><span class="p">()</span>
+<div class=" highlight hl-ipython3"><pre><span></span> 
 </pre></div>
 
     </div>
 </div>
 </div>
 
-<div class="output_wrapper">
-<div class="output">
-
-<div class="output_area">
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>&#39;postgresql+psycopg2://user1:userpwd@localhost:5432/testdb&#39;</pre>
 </div>
+    {% endraw %}
 
-</div>
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
 
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#pgsql_db.get_conn_str()</span>
+</pre></div>
+
+    </div>
 </div>
 </div>
 
 </div>
     {% endraw %}
 
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Export">Export<a class="anchor-link" href="#Export"> </a></h2>
-</div>
-</div>
-</div>
 </div>
  
 

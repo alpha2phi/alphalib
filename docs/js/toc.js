@@ -1,5 +1,4 @@
 // https://github.com/ghiculescu/jekyll-table-of-contents
-// this library modified by fastai to:
 // - update the location.href with the correct anchor when a toc item is clicked on
 (function($){
   $.fn.toc = function(options) {
