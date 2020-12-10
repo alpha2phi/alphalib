@@ -36,6 +36,12 @@ nb_path: "01_data.loader.ipynb"
 </div>
     {% endraw %}
 
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Decorator">Decorator<a class="anchor-link" href="#Decorator"> </a></h2>
+</div>
+</div>
+</div>
     {% raw %}
     
 <div class="cell border-box-sizing code_cell rendered">
@@ -49,9 +55,7 @@ nb_path: "01_data.loader.ipynb"
 <div class="output_markdown rendered_html output_subarea ">
 <h4 id="auto_str" class="doc_header"><code>auto_str</code><a href="https://github.com/alpah2phi/alphalib/tree/master/alphalib/data/loader.py#L18" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>auto_str</code>()</p>
 </blockquote>
-<p>Auto generate string representation of the object.
-Args:
-    cls: Class for which to generate the <strong>str</strong> method.</p>
+<p>Auto generate <strong>str</strong></p>
 
 </div>
 
@@ -72,7 +76,8 @@ Args:
 
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Core-Classes">Core Classes<a class="anchor-link" href="#Core-Classes"> </a></h2>
+<p><code>ObjectFactor</code>, <a href="/alphalib/data.loader.html#DbSinkProvider"><code>DbSinkProvider</code></a> and <a href="/alphalib/data.loader.html#FileSourceProvider"><code>FileSourceProvider</code></a> are the factor classes.</p>
+
 </div>
 </div>
 </div>
@@ -87,41 +92,9 @@ Args:
 
 
 <div class="output_markdown rendered_html output_subarea ">
-<h2 id="ObjectFactory" class="doc_header"><code>class</code> <code>ObjectFactory</code><a href="https://github.com/alpah2phi/alphalib/tree/master/alphalib/data/loader.py#L34" class="source_link" style="float:right">[source]</a></h2><blockquote><p><code>ObjectFactory</code>()</p>
+<h2 id="ObjectFactory" class="doc_header"><code>class</code> <code>ObjectFactory</code><a href="https://github.com/alpah2phi/alphalib/tree/master/alphalib/data/loader.py#L31" class="source_link" style="float:right">[source]</a></h2><blockquote><p><code>ObjectFactory</code>()</p>
 </blockquote>
-<p>Generic object factory.</p>
-
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-    {% endraw %}
-
-    {% raw %}
-    
-<div class="cell border-box-sizing code_cell rendered">
-
-</div>
-    {% endraw %}
-
-    {% raw %}
-    
-<div class="cell border-box-sizing code_cell rendered">
-
-<div class="output_wrapper">
-<div class="output">
-
-<div class="output_area">
-
-
-<div class="output_markdown rendered_html output_subarea ">
-<h2 id="DbSinkProvider" class="doc_header"><code>class</code> <code>DbSinkProvider</code><a href="https://github.com/alpah2phi/alphalib/tree/master/alphalib/data/loader.py#L51" class="source_link" style="float:right">[source]</a></h2><blockquote><p><code>DbSinkProvider</code>() :: <a href="/alphalib/data.loader.html#ObjectFactory"><code>ObjectFactory</code></a></p>
-</blockquote>
-<p>Database factory.</p>
+<p>Generic object factory</p>
 
 </div>
 
@@ -151,9 +124,41 @@ Args:
 
 
 <div class="output_markdown rendered_html output_subarea ">
-<h2 id="FileSourceProvider" class="doc_header"><code>class</code> <code>FileSourceProvider</code><a href="https://github.com/alpah2phi/alphalib/tree/master/alphalib/data/loader.py#L60" class="source_link" style="float:right">[source]</a></h2><blockquote><p><code>FileSourceProvider</code>() :: <a href="/alphalib/data.loader.html#ObjectFactory"><code>ObjectFactory</code></a></p>
+<h2 id="DbSinkProvider" class="doc_header"><code>class</code> <code>DbSinkProvider</code><a href="https://github.com/alpah2phi/alphalib/tree/master/alphalib/data/loader.py#L47" class="source_link" style="float:right">[source]</a></h2><blockquote><p><code>DbSinkProvider</code>() :: <a href="/alphalib/data.loader.html#ObjectFactory"><code>ObjectFactory</code></a></p>
 </blockquote>
-<p>File factory.</p>
+<p>Database provider</p>
+
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+
+</div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+<div class="output_markdown rendered_html output_subarea ">
+<h2 id="FileSourceProvider" class="doc_header"><code>class</code> <code>FileSourceProvider</code><a href="https://github.com/alpah2phi/alphalib/tree/master/alphalib/data/loader.py#L56" class="source_link" style="float:right">[source]</a></h2><blockquote><p><code>FileSourceProvider</code>() :: <a href="/alphalib/data.loader.html#ObjectFactory"><code>ObjectFactory</code></a></p>
+</blockquote>
+<p>Supported file sources</p>
 
 </div>
 
@@ -195,7 +200,7 @@ Args:
 
 
 <div class="output_markdown rendered_html output_subarea ">
-<h2 id="PgSqlDbBuilder" class="doc_header"><code>class</code> <code>PgSqlDbBuilder</code><a href="https://github.com/alpah2phi/alphalib/tree/master/alphalib/data/loader.py#L68" class="source_link" style="float:right">[source]</a></h2><blockquote><p><code>PgSqlDbBuilder</code>()</p>
+<h2 id="PgSqlDbBuilder" class="doc_header"><code>class</code> <code>PgSqlDbBuilder</code><a href="https://github.com/alpah2phi/alphalib/tree/master/alphalib/data/loader.py#L64" class="source_link" style="float:right">[source]</a></h2><blockquote><p><code>PgSqlDbBuilder</code>()</p>
 </blockquote>
 <p>PostgreSQL database builder.</p>
 
@@ -220,7 +225,7 @@ Args:
 
 
 <div class="output_markdown rendered_html output_subarea ">
-<h2 id="PgSqlDb" class="doc_header"><code>class</code> <code>PgSqlDb</code><a href="https://github.com/alpah2phi/alphalib/tree/master/alphalib/data/loader.py#L90" class="source_link" style="float:right">[source]</a></h2><blockquote><p><code>PgSqlDb</code>(<strong><code>host</code></strong>, <strong><code>port</code></strong>, <strong><code>db</code></strong>, <strong><code>user</code></strong>, <strong><code>password</code></strong>)</p>
+<h2 id="PgSqlDb" class="doc_header"><code>class</code> <code>PgSqlDb</code><a href="https://github.com/alpah2phi/alphalib/tree/master/alphalib/data/loader.py#L86" class="source_link" style="float:right">[source]</a></h2><blockquote><p><code>PgSqlDb</code>(<strong><code>host</code></strong>, <strong><code>port</code></strong>, <strong><code>db</code></strong>, <strong><code>user</code></strong>, <strong><code>password</code></strong>)</p>
 </blockquote>
 <p>PostgreSQL database.</p>
 
@@ -264,7 +269,7 @@ Args:
 
 
 <div class="output_markdown rendered_html output_subarea ">
-<h2 id="ExcelSource" class="doc_header"><code>class</code> <code>ExcelSource</code><a href="https://github.com/alpah2phi/alphalib/tree/master/alphalib/data/loader.py#L111" class="source_link" style="float:right">[source]</a></h2><blockquote><p><code>ExcelSource</code>(<strong><code>filepath</code></strong>)</p>
+<h2 id="ExcelSource" class="doc_header"><code>class</code> <code>ExcelSource</code><a href="https://github.com/alpah2phi/alphalib/tree/master/alphalib/data/loader.py#L107" class="source_link" style="float:right">[source]</a></h2><blockquote><p><code>ExcelSource</code>(<strong><code>filepath</code></strong>)</p>
 </blockquote>
 <p>Excel file support.</p>
 
@@ -316,7 +321,7 @@ Args:
 
 
 <div class="output_markdown rendered_html output_subarea ">
-<h4 id="ingest" class="doc_header"><code>ingest</code><a href="https://github.com/alpah2phi/alphalib/tree/master/alphalib/data/loader.py#L133" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>ingest</code>(<strong><code>excel_file</code></strong>, <strong><code>db_name</code></strong>, <strong><code>table_name</code></strong>, <strong><code>db_type</code></strong>=<em><code>'pgsql'</code></em>, <strong><code>schema</code></strong>=<em><code>None</code></em>)</p>
+<h4 id="ingest" class="doc_header"><code>ingest</code><a href="https://github.com/alpah2phi/alphalib/tree/master/alphalib/data/loader.py#L129" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>ingest</code>(<strong><code>excel_file</code></strong>, <strong><code>db_name</code></strong>, <strong><code>table_name</code></strong>, <strong><code>db_type</code></strong>=<em><code>'pgsql'</code></em>, <strong><code>schema</code></strong>=<em><code>None</code></em>)</p>
 </blockquote>
 <p>Ingest the file into the database table.</p>
 

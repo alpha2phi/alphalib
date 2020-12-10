@@ -16,10 +16,7 @@ logging.basicConfig(
 
 # Cell
 def auto_str(cls):
-    """Auto generate string representation of the object.
-    Args:
-        cls: Class for which to generate the __str__ method.
-    """
+    "Auto generate __str__"
 
     def __str__(self):
         return "%s(%s)" % (
@@ -31,9 +28,8 @@ def auto_str(cls):
     return cls
 
 # Cell
-class ObjectFactory:
-    """Generic object factory."""
-
+class ObjectFactory():
+    "Generic object factory"
     def __init__(self):
         self._builders = {}
 
@@ -49,7 +45,7 @@ class ObjectFactory:
 
 # Cell
 class DbSinkProvider(ObjectFactory):
-    """Database factory."""
+    "Database provider"
 
     def get(self, id, **kwargs):
         """Create the database interface"""
@@ -58,7 +54,7 @@ class DbSinkProvider(ObjectFactory):
 
 # Cell
 class FileSourceProvider(ObjectFactory):
-    """File factory."""
+    "Supported file sources"
 
     def get(self, id, **kwargs):
         """Create the file interface"""
