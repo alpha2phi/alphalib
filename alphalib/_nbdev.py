@@ -3,20 +3,28 @@
 __all__ = ["index", "modules", "custom_doc_links", "git_url"]
 
 index = {"auto_str": "01_data.loader.ipynb",
+         "GetAttr": "01_data.loader.ipynb",
          "ObjectFactory": "01_data.loader.ipynb",
-         "DbSinkProvider": "01_data.loader.ipynb",
+         "DbTargetProvider": "01_data.loader.ipynb",
          "FileSourceProvider": "01_data.loader.ipynb",
+         "DatabaseTarget": "01_data.loader.ipynb",
+         "FileSource": "01_data.loader.ipynb",
          "PgSqlDbBuilder": "01_data.loader.ipynb",
          "PgSqlDb": "01_data.loader.ipynb",
+         "MySqlDbBuilder": "01_data.loader.ipynb",
+         "MySqlDb": "01_data.loader.ipynb",
+         "create_excel_file_source": "01_data.loader.ipynb",
+         "create_csv_file_source": "01_data.loader.ipynb",
          "ExcelSource": "01_data.loader.ipynb",
-         "supported_databases": "01_data.loader.ipynb",
-         "supported_files_types": "01_data.loader.ipynb",
+         "CSVSource": "01_data.loader.ipynb",
+         "db_targets": "01_data.loader.ipynb",
+         "file_sources": "01_data.loader.ipynb",
          "ingest": "01_data.loader.ipynb"}
 
 modules = ["data/loader.py"]
 
-doc_url = "https://alpah2phi.github.io/alphalib/"
+doc_url = "https://alpha2phi.github.io/alphalib/"
 
-git_url = "https://github.com/alpah2phi/alphalib/tree/master/"
+git_url = "https://github.com/alpha2phi/alphalib/tree/master/"
 
 def custom_doc_links(name): return None

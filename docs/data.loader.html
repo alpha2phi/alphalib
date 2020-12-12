@@ -53,7 +53,7 @@ nb_path: "01_data.loader.ipynb"
 
 
 <div class="output_markdown rendered_html output_subarea ">
-<h4 id="auto_str" class="doc_header"><code>auto_str</code><a href="https://github.com/alpah2phi/alphalib/tree/master/alphalib/data/loader.py#L18" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>auto_str</code>()</p>
+<h4 id="auto_str" class="doc_header"><code>auto_str</code><a href="https://github.com/alpha2phi/alphalib/tree/master/alphalib/data/loader.py#L21" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>auto_str</code>()</p>
 </blockquote>
 <p>Auto generate <strong>str</strong></p>
 
@@ -76,7 +76,45 @@ nb_path: "01_data.loader.ipynb"
 
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><code>ObjectFactor</code>, <a href="/alphalib/data.loader.html#DbSinkProvider"><code>DbSinkProvider</code></a> and <a href="/alphalib/data.loader.html#FileSourceProvider"><code>FileSourceProvider</code></a> are the factor classes.</p>
+<h2 id="Attribute-Delegation">Attribute Delegation<a class="anchor-link" href="#Attribute-Delegation"> </a></h2>
+</div>
+</div>
+</div>
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+<div class="output_markdown rendered_html output_subarea ">
+<h2 id="GetAttr" class="doc_header"><code>class</code> <code>GetAttr</code><a href="https://github.com/alpha2phi/alphalib/tree/master/alphalib/data/loader.py#L34" class="source_link" style="float:right">[source]</a></h2><blockquote><p><code>GetAttr</code>()</p>
+</blockquote>
+<p>Inherit from this to have all attr accesses in <code>self._xtra</code> passed down to <code>self.default</code></p>
+
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+
+</div>
+    {% endraw %}
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><code>ObjectFactor</code>, <code>DbSinkProvider</code> and <a href="/alphalib/data.loader.html#FileSourceProvider"><code>FileSourceProvider</code></a> are the factory classes.</p>
 
 </div>
 </div>
@@ -92,7 +130,7 @@ nb_path: "01_data.loader.ipynb"
 
 
 <div class="output_markdown rendered_html output_subarea ">
-<h2 id="ObjectFactory" class="doc_header"><code>class</code> <code>ObjectFactory</code><a href="https://github.com/alpah2phi/alphalib/tree/master/alphalib/data/loader.py#L31" class="source_link" style="float:right">[source]</a></h2><blockquote><p><code>ObjectFactory</code>()</p>
+<h2 id="ObjectFactory" class="doc_header"><code>class</code> <code>ObjectFactory</code><a href="https://github.com/alpha2phi/alphalib/tree/master/alphalib/data/loader.py#L51" class="source_link" style="float:right">[source]</a></h2><blockquote><p><code>ObjectFactory</code>()</p>
 </blockquote>
 <p>Generic object factory</p>
 
@@ -124,7 +162,7 @@ nb_path: "01_data.loader.ipynb"
 
 
 <div class="output_markdown rendered_html output_subarea ">
-<h2 id="DbSinkProvider" class="doc_header"><code>class</code> <code>DbSinkProvider</code><a href="https://github.com/alpah2phi/alphalib/tree/master/alphalib/data/loader.py#L47" class="source_link" style="float:right">[source]</a></h2><blockquote><p><code>DbSinkProvider</code>() :: <a href="/alphalib/data.loader.html#ObjectFactory"><code>ObjectFactory</code></a></p>
+<h2 id="DbTargetProvider" class="doc_header"><code>class</code> <code>DbTargetProvider</code><a href="https://github.com/alpha2phi/alphalib/tree/master/alphalib/data/loader.py#L67" class="source_link" style="float:right">[source]</a></h2><blockquote><p><code>DbTargetProvider</code>() :: <a href="/alphalib/data.loader.html#ObjectFactory"><code>ObjectFactory</code></a></p>
 </blockquote>
 <p>Database provider</p>
 
@@ -156,9 +194,80 @@ nb_path: "01_data.loader.ipynb"
 
 
 <div class="output_markdown rendered_html output_subarea ">
-<h2 id="FileSourceProvider" class="doc_header"><code>class</code> <code>FileSourceProvider</code><a href="https://github.com/alpah2phi/alphalib/tree/master/alphalib/data/loader.py#L56" class="source_link" style="float:right">[source]</a></h2><blockquote><p><code>FileSourceProvider</code>() :: <a href="/alphalib/data.loader.html#ObjectFactory"><code>ObjectFactory</code></a></p>
+<h2 id="FileSourceProvider" class="doc_header"><code>class</code> <code>FileSourceProvider</code><a href="https://github.com/alpha2phi/alphalib/tree/master/alphalib/data/loader.py#L76" class="source_link" style="float:right">[source]</a></h2><blockquote><p><code>FileSourceProvider</code>() :: <a href="/alphalib/data.loader.html#ObjectFactory"><code>ObjectFactory</code></a></p>
 </blockquote>
 <p>Supported file sources</p>
+
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+
+</div>
+    {% endraw %}
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><code>DatabaseType</code> and <a href="/alphalib/data.loader.html#FileSource"><code>FileSource</code></a> classes.</p>
+
+</div>
+</div>
+</div>
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+<div class="output_markdown rendered_html output_subarea ">
+<h2 id="DatabaseTarget" class="doc_header"><code>DatabaseTarget</code><a href="https://github.com/alpha2phi/alphalib/tree/master/alphalib/data/loader.py#L84" class="source_link" style="float:right">[source]</a></h2><blockquote><p><code>Enum</code> = [PostgreSQL, MySQL]</p>
+</blockquote>
+<p>An enumeration.</p>
+
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+
+</div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+<div class="output_markdown rendered_html output_subarea ">
+<h2 id="FileSource" class="doc_header"><code>FileSource</code><a href="https://github.com/alpha2phi/alphalib/tree/master/alphalib/data/loader.py#L89" class="source_link" style="float:right">[source]</a></h2><blockquote><p><code>Enum</code> = [CSV, Excel]</p>
+</blockquote>
+<p>An enumeration.</p>
 
 </div>
 
@@ -200,7 +309,7 @@ nb_path: "01_data.loader.ipynb"
 
 
 <div class="output_markdown rendered_html output_subarea ">
-<h2 id="PgSqlDbBuilder" class="doc_header"><code>class</code> <code>PgSqlDbBuilder</code><a href="https://github.com/alpah2phi/alphalib/tree/master/alphalib/data/loader.py#L64" class="source_link" style="float:right">[source]</a></h2><blockquote><p><code>PgSqlDbBuilder</code>()</p>
+<h2 id="PgSqlDbBuilder" class="doc_header"><code>class</code> <code>PgSqlDbBuilder</code><a href="https://github.com/alpha2phi/alphalib/tree/master/alphalib/data/loader.py#L94" class="source_link" style="float:right">[source]</a></h2><blockquote><p><code>PgSqlDbBuilder</code>()</p>
 </blockquote>
 <p>PostgreSQL database builder.</p>
 
@@ -225,9 +334,72 @@ nb_path: "01_data.loader.ipynb"
 
 
 <div class="output_markdown rendered_html output_subarea ">
-<h2 id="PgSqlDb" class="doc_header"><code>class</code> <code>PgSqlDb</code><a href="https://github.com/alpah2phi/alphalib/tree/master/alphalib/data/loader.py#L86" class="source_link" style="float:right">[source]</a></h2><blockquote><p><code>PgSqlDb</code>(<strong><code>host</code></strong>, <strong><code>port</code></strong>, <strong><code>db</code></strong>, <strong><code>user</code></strong>, <strong><code>password</code></strong>)</p>
+<h2 id="PgSqlDb" class="doc_header"><code>class</code> <code>PgSqlDb</code><a href="https://github.com/alpha2phi/alphalib/tree/master/alphalib/data/loader.py#L112" class="source_link" style="float:right">[source]</a></h2><blockquote><p><code>PgSqlDb</code>(<strong><code>host</code></strong>, <strong><code>port</code></strong>, <strong><code>db</code></strong>, <strong><code>user</code></strong>, <strong><code>password</code></strong>)</p>
 </blockquote>
-<p>PostgreSQL database.</p>
+<p>PostgreSQL database destination.</p>
+
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+
+</div>
+    {% endraw %}
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="MySQL">MySQL<a class="anchor-link" href="#MySQL"> </a></h3>
+</div>
+</div>
+</div>
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+<div class="output_markdown rendered_html output_subarea ">
+<h2 id="MySqlDbBuilder" class="doc_header"><code>class</code> <code>MySqlDbBuilder</code><a href="https://github.com/alpha2phi/alphalib/tree/master/alphalib/data/loader.py#L131" class="source_link" style="float:right">[source]</a></h2><blockquote><p><code>MySqlDbBuilder</code>()</p>
+</blockquote>
+<p>MySQL database builder.</p>
+
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+<div class="output_markdown rendered_html output_subarea ">
+<h2 id="MySqlDb" class="doc_header"><code>class</code> <code>MySqlDb</code><a href="https://github.com/alpha2phi/alphalib/tree/master/alphalib/data/loader.py#L149" class="source_link" style="float:right">[source]</a></h2><blockquote><p><code>MySqlDb</code>(<strong><code>host</code></strong>, <strong><code>port</code></strong>, <strong><code>db</code></strong>, <strong><code>user</code></strong>, <strong><code>password</code></strong>)</p>
+</blockquote>
+<p>MySQL database destination.</p>
 
 </div>
 
@@ -252,12 +424,6 @@ nb_path: "01_data.loader.ipynb"
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Excel">Excel<a class="anchor-link" href="#Excel"> </a></h3>
-</div>
-</div>
-</div>
     {% raw %}
     
 <div class="cell border-box-sizing code_cell rendered">
@@ -269,9 +435,84 @@ nb_path: "01_data.loader.ipynb"
 
 
 <div class="output_markdown rendered_html output_subarea ">
-<h2 id="ExcelSource" class="doc_header"><code>class</code> <code>ExcelSource</code><a href="https://github.com/alpah2phi/alphalib/tree/master/alphalib/data/loader.py#L107" class="source_link" style="float:right">[source]</a></h2><blockquote><p><code>ExcelSource</code>(<strong><code>filepath</code></strong>)</p>
+<h4 id="create_excel_file_source" class="doc_header"><code>create_excel_file_source</code><a href="https://github.com/alpha2phi/alphalib/tree/master/alphalib/data/loader.py#L169" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>create_excel_file_source</code>(<strong><code>file_path</code></strong>, <strong>**<code>args</code></strong>)</p>
 </blockquote>
-<p>Excel file support.</p>
+<p>Create Excel file source.</p>
+
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+<div class="output_markdown rendered_html output_subarea ">
+<h4 id="create_csv_file_source" class="doc_header"><code>create_csv_file_source</code><a href="https://github.com/alpha2phi/alphalib/tree/master/alphalib/data/loader.py#L173" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>create_csv_file_source</code>(<strong><code>file_path</code></strong>, <strong>**<code>args</code></strong>)</p>
+</blockquote>
+<p>Create CSV file source.</p>
+
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+<div class="output_markdown rendered_html output_subarea ">
+<h2 id="ExcelSource" class="doc_header"><code>class</code> <code>ExcelSource</code><a href="https://github.com/alpha2phi/alphalib/tree/master/alphalib/data/loader.py#L177" class="source_link" style="float:right">[source]</a></h2><blockquote><p><code>ExcelSource</code>(<strong><code>file_path</code></strong>, <strong>**<code>args</code></strong>)</p>
+</blockquote>
+<p>Excel file source.</p>
+
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+<div class="output_markdown rendered_html output_subarea ">
+<h2 id="CSVSource" class="doc_header"><code>class</code> <code>CSVSource</code><a href="https://github.com/alpha2phi/alphalib/tree/master/alphalib/data/loader.py#L191" class="source_link" style="float:right">[source]</a></h2><blockquote><p><code>CSVSource</code>(<strong><code>file_path</code></strong>, <strong>**<code>args</code></strong>)</p>
+</blockquote>
+<p>CSV file source.</p>
 
 </div>
 
@@ -321,7 +562,7 @@ nb_path: "01_data.loader.ipynb"
 
 
 <div class="output_markdown rendered_html output_subarea ">
-<h4 id="ingest" class="doc_header"><code>ingest</code><a href="https://github.com/alpah2phi/alphalib/tree/master/alphalib/data/loader.py#L129" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>ingest</code>(<strong><code>excel_file</code></strong>, <strong><code>db_name</code></strong>, <strong><code>table_name</code></strong>, <strong><code>db_type</code></strong>=<em><code>'pgsql'</code></em>, <strong><code>schema</code></strong>=<em><code>None</code></em>)</p>
+<h4 id="ingest" class="doc_header"><code>ingest</code><a href="https://github.com/alpha2phi/alphalib/tree/master/alphalib/data/loader.py#L220" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>ingest</code>(<strong><code>file_source</code></strong>, <strong><code>target_db</code></strong>, <strong><code>table_name</code></strong>, <strong><code>if_exists</code></strong>=<em><code>'append'</code></em>, <strong><code>method</code></strong>=<em><code>'multi'</code></em>, <strong><code>schema</code></strong>=<em><code>None</code></em>)</p>
 </blockquote>
 <p>Ingest the file into the database table.</p>
 
@@ -349,10 +590,155 @@ nb_path: "01_data.loader.ipynb"
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span> 
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">excel_source</span> <span class="o">=</span> <span class="n">file_sources</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">FileSource</span><span class="o">.</span><span class="n">Excel</span><span class="p">,</span> <span class="n">file_path</span><span class="o">=</span><span class="s2">&quot;data/accounts.xlsx&quot;</span><span class="p">)</span>
+<span class="n">excel_source</span><span class="o">.</span><span class="n">get_data</span><span class="p">()</span>
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>user_id</th>
+      <th>username</th>
+      <th>password</th>
+      <th>email</th>
+      <th>created_on</th>
+      <th>last_login</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>1</td>
+      <td>user1</td>
+      <td>user11</td>
+      <td>user1@abc.com</td>
+      <td>2020-12-06 04:00:00.000003</td>
+      <td>2020-12-07 13:00:00.000003</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>2</td>
+      <td>user2</td>
+      <td>user22</td>
+      <td>user2@abc.com</td>
+      <td>2020-12-06 04:00:00.000003</td>
+      <td>2020-12-07 13:00:00.000003</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>3</td>
+      <td>user3</td>
+      <td>user33</td>
+      <td>user3@abc.com</td>
+      <td>2020-12-06 04:00:00.000003</td>
+      <td>2020-12-07 13:00:00.000003</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>4</td>
+      <td>user4</td>
+      <td>user44</td>
+      <td>user4@abc.com</td>
+      <td>2020-12-06 04:00:00.000003</td>
+      <td>2020-12-07 13:00:00.000003</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>5</td>
+      <td>user5</td>
+      <td>user55</td>
+      <td>user5@abc.com</td>
+      <td>2020-12-06 04:00:00.000003</td>
+      <td>2020-12-07 13:00:00.000003</td>
+    </tr>
+    <tr>
+      <th>...</th>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <th>95</th>
+      <td>96</td>
+      <td>user96</td>
+      <td>user9696</td>
+      <td>user96@abc.com</td>
+      <td>2020-12-06 04:00:00.000003</td>
+      <td>2020-12-07 13:00:00.000003</td>
+    </tr>
+    <tr>
+      <th>96</th>
+      <td>97</td>
+      <td>user97</td>
+      <td>user9797</td>
+      <td>user97@abc.com</td>
+      <td>2020-12-06 04:00:00.000003</td>
+      <td>2020-12-07 13:00:00.000003</td>
+    </tr>
+    <tr>
+      <th>97</th>
+      <td>98</td>
+      <td>user98</td>
+      <td>user9898</td>
+      <td>user98@abc.com</td>
+      <td>2020-12-06 04:00:00.000003</td>
+      <td>2020-12-07 13:00:00.000003</td>
+    </tr>
+    <tr>
+      <th>98</th>
+      <td>99</td>
+      <td>user99</td>
+      <td>user9999</td>
+      <td>user99@abc.com</td>
+      <td>2020-12-06 04:00:00.000003</td>
+      <td>2020-12-07 13:00:00.000003</td>
+    </tr>
+    <tr>
+      <th>99</th>
+      <td>100</td>
+      <td>user100</td>
+      <td>user100100</td>
+      <td>user100@abc.com</td>
+      <td>2020-12-06 04:00:00.000003</td>
+      <td>2020-12-07 13:00:00.000003</td>
+    </tr>
+  </tbody>
+</table>
+<p>100 rows × 6 columns</p>
+</div>
+</div>
+
+</div>
+
 </div>
 </div>
 
@@ -366,10 +752,421 @@ nb_path: "01_data.loader.ipynb"
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#pgsql_db.get_conn_str()</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">csv_source</span> <span class="o">=</span> <span class="n">file_sources</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">FileSource</span><span class="o">.</span><span class="n">CSV</span><span class="p">,</span> <span class="n">file_path</span><span class="o">=</span><span class="s2">&quot;data/accounts.csv&quot;</span><span class="p">)</span>
+<span class="n">csv_source</span><span class="o">.</span><span class="n">get_data</span><span class="p">()</span>
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>user_id</th>
+      <th>username</th>
+      <th>password</th>
+      <th>email</th>
+      <th>created_on</th>
+      <th>last_login</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>1</td>
+      <td>user1</td>
+      <td>user11</td>
+      <td>user1@abc.com</td>
+      <td>2020-12-06 04:00:00</td>
+      <td>2020-12-07 13:00:00</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>2</td>
+      <td>user2</td>
+      <td>user22</td>
+      <td>user2@abc.com</td>
+      <td>2020-12-06 04:00:00</td>
+      <td>2020-12-07 13:00:00</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>3</td>
+      <td>user3</td>
+      <td>user33</td>
+      <td>user3@abc.com</td>
+      <td>2020-12-06 04:00:00</td>
+      <td>2020-12-07 13:00:00</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>4</td>
+      <td>user4</td>
+      <td>user44</td>
+      <td>user4@abc.com</td>
+      <td>2020-12-06 04:00:00</td>
+      <td>2020-12-07 13:00:00</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>5</td>
+      <td>user5</td>
+      <td>user55</td>
+      <td>user5@abc.com</td>
+      <td>2020-12-06 04:00:00</td>
+      <td>2020-12-07 13:00:00</td>
+    </tr>
+    <tr>
+      <th>...</th>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <th>95</th>
+      <td>96</td>
+      <td>user96</td>
+      <td>user9696</td>
+      <td>user96@abc.com</td>
+      <td>2020-12-06 04:00:00</td>
+      <td>2020-12-07 13:00:00</td>
+    </tr>
+    <tr>
+      <th>96</th>
+      <td>97</td>
+      <td>user97</td>
+      <td>user9797</td>
+      <td>user97@abc.com</td>
+      <td>2020-12-06 04:00:00</td>
+      <td>2020-12-07 13:00:00</td>
+    </tr>
+    <tr>
+      <th>97</th>
+      <td>98</td>
+      <td>user98</td>
+      <td>user9898</td>
+      <td>user98@abc.com</td>
+      <td>2020-12-06 04:00:00</td>
+      <td>2020-12-07 13:00:00</td>
+    </tr>
+    <tr>
+      <th>98</th>
+      <td>99</td>
+      <td>user99</td>
+      <td>user9999</td>
+      <td>user99@abc.com</td>
+      <td>2020-12-06 04:00:00</td>
+      <td>2020-12-07 13:00:00</td>
+    </tr>
+    <tr>
+      <th>99</th>
+      <td>100</td>
+      <td>user100</td>
+      <td>user100100</td>
+      <td>user100@abc.com</td>
+      <td>2020-12-06 04:00:00</td>
+      <td>2020-12-07 13:00:00</td>
+    </tr>
+  </tbody>
+</table>
+<p>100 rows × 6 columns</p>
+</div>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">config</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s1">&#39;host&#39;</span><span class="p">:</span> <span class="s1">&#39;localhost&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;port&#39;</span><span class="p">:</span> <span class="mi">5432</span><span class="p">,</span>
+    <span class="s1">&#39;db&#39;</span><span class="p">:</span> <span class="s1">&#39;testdb&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;user&#39;</span><span class="p">:</span> <span class="s1">&#39;user1&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;password&#39;</span><span class="p">:</span> <span class="s1">&#39;userpwd&#39;</span>
+<span class="p">}</span>
+<span class="n">pgsql_target</span> <span class="o">=</span> <span class="n">db_targets</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">DatabaseTarget</span><span class="o">.</span><span class="n">PostgreSQL</span><span class="p">,</span> <span class="o">**</span><span class="n">config</span><span class="p">)</span>
+<span class="n">pgsql_target</span><span class="o">.</span><span class="n">get_conn_str</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>&#39;postgresql+psycopg2://user1:userpwd@localhost:5432/testdb&#39;</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">ingest</span><span class="p">(</span><span class="n">excel_source</span><span class="p">,</span> <span class="n">pgsql_target</span><span class="p">,</span> <span class="s1">&#39;accounts&#39;</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stderr output_text">
+<pre>2020-12-12 21:33:38,062 INFO(): {&#39;user_id&#39;: INTEGER(), &#39;username&#39;: VARCHAR(length=50), &#39;password&#39;: VARCHAR(length=50), &#39;email&#39;: VARCHAR(length=255), &#39;created_on&#39;: TIMESTAMP(), &#39;last_login&#39;: TIMESTAMP()}
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>
+Total records in data/accounts.xlsx - 100
+user_id - 100
+username - 100
+password - 100
+email - 100
+created_on - 1
+last_login - 1
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">ingest</span><span class="p">(</span><span class="n">excel_source</span><span class="p">,</span> <span class="n">pgsql_target</span><span class="p">,</span> <span class="s1">&#39;accounts&#39;</span><span class="p">,</span> <span class="n">if_exists</span><span class="o">=</span><span class="s1">&#39;replace&#39;</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stderr output_text">
+<pre>2020-12-12 21:33:38,214 INFO(): {&#39;user_id&#39;: INTEGER(), &#39;username&#39;: VARCHAR(length=50), &#39;password&#39;: VARCHAR(length=50), &#39;email&#39;: VARCHAR(length=255), &#39;created_on&#39;: TIMESTAMP(), &#39;last_login&#39;: TIMESTAMP()}
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>
+Total records in data/accounts.xlsx - 100
+user_id - 100
+username - 100
+password - 100
+email - 100
+created_on - 1
+last_login - 1
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">config</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s1">&#39;host&#39;</span><span class="p">:</span> <span class="s1">&#39;localhost&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;port&#39;</span><span class="p">:</span> <span class="mi">3306</span><span class="p">,</span>
+    <span class="s1">&#39;db&#39;</span><span class="p">:</span> <span class="s1">&#39;testdb&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;user&#39;</span><span class="p">:</span> <span class="s1">&#39;user1&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;password&#39;</span><span class="p">:</span> <span class="s1">&#39;userpwd&#39;</span>
+<span class="p">}</span>
+<span class="n">mysql_target</span> <span class="o">=</span> <span class="n">db_targets</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">DatabaseTarget</span><span class="o">.</span><span class="n">MySQL</span><span class="p">,</span> <span class="o">**</span><span class="n">config</span><span class="p">)</span>
+<span class="n">mysql_target</span><span class="o">.</span><span class="n">get_conn_str</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>&#39;mysql+pymysql://user1:userpwd@localhost:3306/testdb?charset=utf8mb4&#39;</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">ingest</span><span class="p">(</span><span class="n">excel_source</span><span class="p">,</span> <span class="n">mysql_target</span><span class="p">,</span> <span class="s1">&#39;accounts&#39;</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stderr output_text">
+<pre>2020-12-12 21:33:38,710 INFO(): {&#39;user_id&#39;: INTEGER(), &#39;username&#39;: VARCHAR(length=50), &#39;password&#39;: VARCHAR(length=50), &#39;email&#39;: VARCHAR(length=255), &#39;created_on&#39;: TIMESTAMP(), &#39;last_login&#39;: TIMESTAMP()}
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>
+Total records in data/accounts.xlsx - 100
+user_id - 100
+username - 100
+password - 100
+email - 100
+created_on - 1
+last_login - 1
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">ingest</span><span class="p">(</span><span class="n">excel_source</span><span class="p">,</span> <span class="n">mysql_target</span><span class="p">,</span> <span class="s1">&#39;accounts&#39;</span><span class="p">,</span> <span class="n">if_exists</span><span class="o">=</span><span class="s1">&#39;replace&#39;</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stderr output_text">
+<pre>2020-12-12 21:33:39,131 INFO(): {&#39;user_id&#39;: INTEGER(), &#39;username&#39;: VARCHAR(length=50), &#39;password&#39;: VARCHAR(length=50), &#39;email&#39;: VARCHAR(length=255), &#39;created_on&#39;: TIMESTAMP(), &#39;last_login&#39;: TIMESTAMP()}
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>
+Total records in data/accounts.xlsx - 100
+user_id - 100
+username - 100
+password - 100
+email - 100
+created_on - 1
+last_login - 1
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 

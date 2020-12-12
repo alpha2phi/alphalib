@@ -57,11 +57,126 @@ nb_path: "index.ipynb"
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Fill me in please! Don't forget code examples:</p>
+<h3 id="Ingest-from-Excel-to-accounts-table-in-PostgreSQL">Ingest from Excel to <code>accounts</code> table in PostgreSQL<a class="anchor-link" href="#Ingest-from-Excel-to-accounts-table-in-PostgreSQL"> </a></h3>
+</div>
+</div>
+</div>
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">excel_source</span> <span class="o">=</span> <span class="n">file_sources</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">FileSource</span><span class="o">.</span><span class="n">Excel</span><span class="p">,</span> <span class="n">file_path</span><span class="o">=</span><span class="s2">&quot;data/accounts.xlsx&quot;</span><span class="p">)</span>
+<span class="n">config</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s1">&#39;host&#39;</span><span class="p">:</span> <span class="s1">&#39;localhost&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;port&#39;</span><span class="p">:</span> <span class="mi">5432</span><span class="p">,</span>
+    <span class="s1">&#39;db&#39;</span><span class="p">:</span> <span class="s1">&#39;testdb&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;user&#39;</span><span class="p">:</span> <span class="s1">&#39;user1&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;password&#39;</span><span class="p">:</span> <span class="s1">&#39;userpwd&#39;</span>
+<span class="p">}</span>
+<span class="n">pgsql_target</span> <span class="o">=</span> <span class="n">db_targets</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">DatabaseTarget</span><span class="o">.</span><span class="n">PostgreSQL</span><span class="p">,</span> <span class="o">**</span><span class="n">config</span><span class="p">)</span>
+<span class="n">ingest</span><span class="p">(</span><span class="n">excel_source</span><span class="p">,</span> <span class="n">pgsql_target</span><span class="p">,</span> <span class="s1">&#39;accounts&#39;</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stderr output_text">
+<pre>2020-12-12 21:26:59,943 INFO(): {&#39;user_id&#39;: INTEGER(), &#39;username&#39;: VARCHAR(length=50), &#39;password&#39;: VARCHAR(length=50), &#39;email&#39;: VARCHAR(length=255), &#39;created_on&#39;: TIMESTAMP(), &#39;last_login&#39;: TIMESTAMP()}
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>
+Total records in data/accounts.xlsx - 100
+user_id - 100
+username - 100
+password - 100
+email - 100
+created_on - 1
+last_login - 1
+</pre>
+</div>
+</div>
 
 </div>
 </div>
+
 </div>
+    {% endraw %}
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Ingest-from-CSV-to-accounts-table-in-MySQL">Ingest from CSV to <code>accounts</code> table in MySQL<a class="anchor-link" href="#Ingest-from-CSV-to-accounts-table-in-MySQL"> </a></h3>
+</div>
+</div>
+</div>
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">csv_source</span> <span class="o">=</span> <span class="n">file_sources</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">FileSource</span><span class="o">.</span><span class="n">CSV</span><span class="p">,</span> <span class="n">file_path</span><span class="o">=</span><span class="s2">&quot;data/accounts.csv&quot;</span><span class="p">)</span>
+<span class="n">config</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s1">&#39;host&#39;</span><span class="p">:</span> <span class="s1">&#39;localhost&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;port&#39;</span><span class="p">:</span> <span class="mi">3306</span><span class="p">,</span>
+    <span class="s1">&#39;db&#39;</span><span class="p">:</span> <span class="s1">&#39;testdb&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;user&#39;</span><span class="p">:</span> <span class="s1">&#39;user1&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;password&#39;</span><span class="p">:</span> <span class="s1">&#39;userpwd&#39;</span>
+<span class="p">}</span>
+<span class="n">mysql_target</span> <span class="o">=</span> <span class="n">db_targets</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">DatabaseTarget</span><span class="o">.</span><span class="n">MySQL</span><span class="p">,</span> <span class="o">**</span><span class="n">config</span><span class="p">)</span>
+<span class="n">ingest</span><span class="p">(</span><span class="n">csv_source</span><span class="p">,</span> <span class="n">mysql_target</span><span class="p">,</span> <span class="s1">&#39;accounts&#39;</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stderr output_text">
+<pre>2020-12-12 21:35:29,017 INFO(): {&#39;user_id&#39;: INTEGER(), &#39;username&#39;: VARCHAR(length=50), &#39;password&#39;: VARCHAR(length=50), &#39;email&#39;: VARCHAR(length=255), &#39;created_on&#39;: TIMESTAMP(), &#39;last_login&#39;: TIMESTAMP()}
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>
+Total records in data/accounts.csv - 100
+user_id - 100
+username - 100
+password - 100
+email - 100
+created_on - 1
+last_login - 1
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
 </div>
  
 

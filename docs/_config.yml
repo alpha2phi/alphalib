@@ -58,4 +58,4 @@ sidebars:
 description: "Documentation for alphalib"
 # theme: jekyll-theme-cayman
 
-baseurl: /
+baseurl: /alphalib/
